@@ -2,10 +2,16 @@ import axios, { AxiosError, AxiosInstance, AxiosRequestConfig, AxiosResponse } f
 import { inject } from 'vue';
 import { Client, Order, Expert, Assistant, Review, Funeral, Rating } from '@/types'
 
+
+
+
+
+
+
 // API 원형
 abstract class HttpClient {
   protected readonly instance: AxiosInstance;
-
+    
   public constructor(instance: AxiosInstance) {
     this.instance = instance;
 
